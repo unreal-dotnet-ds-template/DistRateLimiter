@@ -1,0 +1,19 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/DistRateLimiter.Core/DistRateLimiter.Core.csproj" />
+    <Project Path="src/DistRateLimiter.Features/DistRateLimiter.Features.csproj" />
+    <Project Path="src/DistRateLimiter.WebApiApp/DistRateLimiter.WebApiApp.csproj" />
+  </Folder>
+
+  <Folder Name="/src/Aspires/">
+    <Project Path="src/Aspires/DistRateLimiter.Aspires.AppHost/DistRateLimiter.Aspires.AppHost.csproj" />
+    <Project Path="src/Aspires/DistRateLimiter.Aspires.ServiceDefaults/DistRateLimiter.Aspires.ServiceDefaults.csproj" />
+  </Folder>
+  <Folder Name="/src/OrleansSilo/">
+    <Project Path="src/OrleansSilo/DistRateLimiter.OrleansSilo.WebApp/DistRateLimiter.OrleansSilo.WebApp.csproj" />
+  </Folder>
+
+  <Folder Name="/tests/">
+    <Project Path="tests/DistRateLimiter.HostApplication.Tests/DistRateLimiter.HostApplication.Tests.csproj" />
+  </Folder>
+</Solution>

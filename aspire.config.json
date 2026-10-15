@@ -1,0 +1,5 @@
+{
+  "appHost": {
+    "path": "src/Aspires/DistRateLimiter.Aspires.AppHost/DistRateLimiter.Aspires.AppHost.csproj"
+  }
+}

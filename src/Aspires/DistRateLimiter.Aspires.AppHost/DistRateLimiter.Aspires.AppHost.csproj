@@ -1,0 +1,13 @@
+<Project Sdk="Aspire.AppHost.Sdk/13.5.3">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\OrleansSilo\DistRateLimiter.OrleansSilo.WebApp\DistRateLimiter.OrleansSilo.WebApp.csproj" />
+    <ProjectReference Include="..\..\DistRateLimiter.WebApiApp\DistRateLimiter.WebApiApp.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.Orleans" />
+    <PackageReference Include="Aspire.Hosting.Redis" />
+  </ItemGroup>
+</Project>

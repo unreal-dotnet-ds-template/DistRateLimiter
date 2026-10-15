@@ -6,15 +6,14 @@ var redisOrleansClustering = builder.AddRedis("DistRateLimiter-redis-orleans-clu
 // orleans cluster
 var orleans = builder.AddOrleans("DistRateLimiter-orleansCluster")
     .WithClustering(redisOrleansClustering)
-    .WithGrainStorage("DefaultStore", redisOrleansClustering)
-    .WithGrainStorage("PubSubStore", redisOrleansClustering);
-
+    .WithGrainStorage("tokensStore", redisOrleansClustering);
+    
 // orleans silo -> backend. you run logic here.
 var webOrleansSilo = builder.AddProject<Projects.DistRateLimiter_OrleansSilo_WebApp>("DistRateLimiter-web-orleans-silo")
     .WithReference(orleans)
     .WithHttpHealthCheck("/health", endpointName: "http")
     .WaitFor(redisOrleansClustering)
-    .WithReplicas(1);
+    .WithReplicas(4);
 
 // orleans client -> frontend. you call grains here.
 var webApi = builder.AddProject<Projects.DistRateLimiter_WebApiApp>("DistRateLimiter-web-api")

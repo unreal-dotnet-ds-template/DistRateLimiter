@@ -6,7 +6,7 @@
       "dotnetRunMessages": true,
       "launchBrowser": false,
       "launchUrl": "orleans-dashboard",
-      "applicationUrl": "http://localhost:5385",
+      "applicationUrl": "http://localhost:5579",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -16,7 +16,7 @@
       "dotnetRunMessages": true,
       "launchBrowser": false,
       "launchUrl": "orleans-dashboard",
-      "applicationUrl": "https://localhost:7493;http://localhost:5385",
+      "applicationUrl": "https://localhost:7488;http://localhost:5579",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

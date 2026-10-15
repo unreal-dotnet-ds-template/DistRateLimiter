@@ -14,6 +14,7 @@
   </Folder>
 
   <Folder Name="/tests/">
+    <Project Path="tests/DistRateLimiter.Grain.Tests/DistRateLimiter.Grain.Tests.csproj" />
     <Project Path="tests/DistRateLimiter.HostApplication.Tests/DistRateLimiter.HostApplication.Tests.csproj" />
   </Folder>
 </Solution>
